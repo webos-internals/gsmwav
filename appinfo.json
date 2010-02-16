@@ -1,0 +1,16 @@
+{
+	"title": "GSM 6.10 WAV Codec",
+	"id": "org.webosinternals.gstcodecs.gsmwav",
+	"version": "1.0",
+	"release_date": "16-Feb-2010",
+	"vendor": "WebOS Internals",
+	"vendor_email": "zsoc.webosinternals@gmail.com",
+	"vendor_url": http://www.webos-internals.org/wiki/Application:GstCodecs",
+	"type": "web",
+	"main": "index.html",
+	"icon": "none",
+	"removable": "true",
+	"noWindow": true,
+	"noDeprecatedStyles": true
+}
+	
