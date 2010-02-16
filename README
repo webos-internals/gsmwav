@@ -1,0 +1,5 @@
+gsmwav codec for webOS
+
+original source found http://palm.cdnetworks.net/opensource/1.3.5/gst-plugins-bad-0.10.9.tgz + patch http://palm.cdnetworks.net/opensource/1.3.5/gst-plugins-base-0.10.21-patch.gz
+
+build environment found git://git.webos-internals.org/preware/cross-compile.git
