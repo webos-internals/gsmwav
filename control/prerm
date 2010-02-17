@@ -1,0 +1,16 @@
+#!/bin/sh                                                                                       
+GSMLIB="libgsm.a"
+GSTGSMLIB="libgstgsm.so"
+LIBINSTALL="/usr/local/"
+GSTLIBINSTALL="/usr/local/gstreamer-0.10/"
+
+# Uninstall binaries
+rm -f $LIBINSTALL/$GSMLIB
+rm -f $GSTLIBINSTALL/$GSTGSMLIB
+
+# Unregister binaries
+
+gst-inspect
+
+exit 0
+
