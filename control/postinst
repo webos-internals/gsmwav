@@ -2,18 +2,17 @@
 PID="org.webosinternals.gstcodecs.gsmwav"
 GSMLIB="binaries/libgsm.a"
 GSTGSMLIB="binaries/libgstgsm.so"
-LIBINSTALL="/usr/local/"
-GSTLIBINSTALL="/usr/local/gstreamer-0.10/"
+LIBINSTALL="/usr/lib"
+GSTLIBSYM="/usr/lib/gstreamer-0.10/gstlibgsm-webosinternals.so"
 
 if [ -z "$IPKG_OFFLINE_ROOT" ]; then
   IPKG_OFFLINE_ROOT=/media/cryptofs/apps
 fi
 
-# Install binaries 
-cp $IPKG_OFFLINE_ROOT/$PID/$GSMLIB $LIBINSTALL
-cp $IPKG_OFFLINE_ROOT/$PID/$GSTGSMLIB $GSTLIBINSTALL
+# Symlink binary
+ln -s $IPKG_OFFLINE_ROOT/$PID/$GSTGSMLIB $GSTLIBSYM
 
-# Register binaries
+# Register binary
 
 gst-inspect
 
