@@ -1,8 +1,6 @@
 #!/bin/sh                                                                                       
 PID="org.webosinternals.gstcodecs.gsmwav"
-GSMLIB="binaries/libgsm.a"
 GSTGSMLIB="binaries/libgstgsm.so"
-LIBINSTALL="/usr/lib"
 GSTLIBSYM="/usr/lib/gstreamer-0.10/gstlibgsm-webosinternals.so"
 
 if [ -z "$IPKG_OFFLINE_ROOT" ]; then
@@ -10,7 +8,8 @@ if [ -z "$IPKG_OFFLINE_ROOT" ]; then
 fi
 
 # Symlink binary
-ln -s $IPKG_OFFLINE_ROOT/$PID/$GSTGSMLIB $GSTLIBSYM
+rm -f $GSTLIBSYM
+ln -s $IPKG_OFFLINE_ROOT/usr/palm/applications/$PID/$GSTGSMLIB $GSTLIBSYM
 
 # Register binary
 
