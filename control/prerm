@@ -1,9 +1,8 @@
 #!/bin/sh                                                                                       
-GSTGSMSYM="libgstgsm-webosinternals.so"
-GSTLIBINSTALL="/usr/lib/gstreamer-0.10/"
+GSTLIBSYM="/usr/lib/gstreamer-0.10/libgstgsm-webosinternals.so"
 
 # Uninstall binaries
-rm -f $GSTLIBINSTALL/$GSTGSMSYM
+rm -f $GSTLINSYM
 
 # Unregister binaries
 gst-inspect
