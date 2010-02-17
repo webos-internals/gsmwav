@@ -1,6 +1,6 @@
 #!/bin/sh                                                                                       
 PID="org.webosinternals.gstcodecs.gsmwav"
-GSTGSMLIB="binaries/libgstgsm.so"
+GSTGSMLIB="binaries/armv7/libgstgsm.so"
 GSTLIBSYM="/usr/lib/gstreamer-0.10/gstlibgsm-webosinternals.so"
 
 if [ -z "$IPKG_OFFLINE_ROOT" ]; then
